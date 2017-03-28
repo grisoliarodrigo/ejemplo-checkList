@@ -4,6 +4,7 @@ import java.util.List
 
 class CheckList {
 	
+	//A mi me gustaban los comentarios
 	String descripcion
 	List<Item> items = newArrayList
 	
