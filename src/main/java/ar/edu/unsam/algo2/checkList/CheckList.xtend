@@ -25,7 +25,8 @@ class CheckList {
 	}
 	
 	def estaPendiente() {
-		items.forall [ item | !item.checked ]
+		val resultado = items.forall [ item | !item.checked ]
+		return resultado
 	}
 	
 	
