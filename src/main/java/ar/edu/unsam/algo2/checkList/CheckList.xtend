@@ -9,7 +9,7 @@ class CheckList {
 	List<Item> items = newArrayList
 	
 	new (String _decripcion){
-		descripcion = _decripcion
+		this.descripcion = _decripcion
 	}
 	
 	def agregarItem(Item item) {
