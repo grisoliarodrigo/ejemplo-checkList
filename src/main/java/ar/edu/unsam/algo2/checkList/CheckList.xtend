@@ -4,7 +4,6 @@ import java.util.List
 
 class CheckList {
 	
-	//Comentario para commitear
 	String descripcion
 	List<Item> items = newArrayList
 	
@@ -16,17 +15,14 @@ class CheckList {
 		items.add(item)
 	}
 	
-	//Está completo
 	def estaCompleto() {
 		items.forall [ item | item.checked ]
 	}
 	
-	//Está en progreso
 	def estaEnProgreso() {
 		items.exists [ item | item.checked ] && items.exists [ item | !item.checked ]
 	}
 	
-	//Está pendiente
 	def estaPendiente() {
 		items.forall [ item | !item.checked ]
 	}
