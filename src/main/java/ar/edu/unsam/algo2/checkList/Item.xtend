@@ -8,7 +8,7 @@ class Item {
 	@Accessors boolean checked = false
 	
 	new (String _descripcion){
-		descripcion = _descripcion
+		this.descripcion = _descripcion
 	}
 	
 	def toggleChecked() {
